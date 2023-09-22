@@ -1,0 +1,8 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<h1>Сайт со списком слов</h1>
+<ul>
+    <li><a href="{% url 'add_word' %}">Добавить новое слово</a></li>
+    <li><a href="{% url 'words_list' %}">Посмотреть список слов</a></li>
+{% endblock %}

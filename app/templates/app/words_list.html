@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% load words_list_tag %}
+
+{% block content %}
+{% list as w_list %}
+<table class="words_list">
+    {% for w in w_list %}
+    <tr>
+        <td>{{ w.russian }}</td>
+        <td>{{ w.english }}</td>
+    </tr>
+    {% endfor %}
+</ul>
+{% endblock %}
